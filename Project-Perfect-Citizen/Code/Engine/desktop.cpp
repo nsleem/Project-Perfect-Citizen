@@ -1,5 +1,5 @@
 //desktop.cpp
-// Nader Sleem
+
 #include "../ResourceDef.h"
 #include <string>
 #include <fstream>
@@ -48,7 +48,8 @@ ppc::Desktop::Desktop() {
 ppc::Desktop::Desktop(WindowInterface* bkgndWin, NodeState n) :
           Desktop() {
 
-	windows_.clear(); //these 3 steps must be done because of default Ctor
+	//These 3 steps must be done because of default Ctor.
+	windows_.clear(); 
 	desktopWindow_ = nullptr;
 	focused_ = nullptr;
 
